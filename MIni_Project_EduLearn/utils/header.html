@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .header{
+            background-color: #0F172A;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 40px;
+            color: #E5E6EB;
+        }
+        #logo{
+            height: 30px;
+        }
+        .nav-link{
+            display: flex;
+            gap: 10px;
+            list-style: none;
+            
+           
+        }
+
+        .nav-link a{
+            text-decoration: none;
+            color: #E5E6EB;
+            font-family: Inter, "Segoe UI", sans-serif;
+            font-weight: 500;
+             padding: 5px 10px;
+            border-radius: 10px;
+        }
+
+        .nav-link a:hover{
+            background-color: #1E40AF;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 10px;
+        }
+        .btn-div button{
+
+            color: #E5E6EB;
+            background-color: #1E40AF;
+              padding: 5px 10px;
+            border-radius: 10px;
+        }
+        .btn-div button:hover{
+            color: white;
+            font-size: 500px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <header class="header">
+          <img id="logo" src="../images/logo.png" alt="">
+          <nav class="nav-link">
+            <li><a href="../index.html"> Home</a></li>
+            <li><a href="../about.html"> About</a></li>
+            <li><a href="../course.html"> Course</a></li>
+            <li><a href="../student.html"> Student</a></li>
+            <li><a href="../contact.html"> Contact Us</a></li>
+          
+          
+          </nav>
+          <div class="btn-div">
+            <a  class="btn" href="../register.html"> <button> Register</button></a>
+            <a  class="btn" href="../login.html"> <button> Login</button></a>
+          </div>
+
+
+        </header>
+    </section>
+</body>
+</html>
