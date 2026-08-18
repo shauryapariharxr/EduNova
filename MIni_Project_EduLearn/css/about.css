@@ -1,0 +1,65 @@
+/* ==========================================================
+   EduNova · About page
+   Extends css/home.css (tokens, nav, footer, section, feature-grid,
+   stats-strip, cta-banner already defined there — load home.css first)
+   ========================================================== */
+
+.about-hero { padding: 64px 32px 20px; }
+.about-hero-inner { max-width: 720px; margin: 0 auto; text-align: center; }
+.about-hero-inner h1 {
+  font-family: var(--font-display); font-weight: 700;
+  font-size: 40px; line-height: 1.2; letter-spacing: -0.02em;
+  margin: 0 0 18px;
+}
+.about-hero-inner p { font-size: 15.5px; line-height: 1.65; color: var(--ink-soft); margin: 0; }
+
+/* ---- Story ---- */
+.story-section { padding-top: 40px; }
+.story-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 56px; align-items: center; }
+.story-copy h2 { font-family: var(--font-display); font-size: 28px; font-weight: 700; margin: 14px 0 18px; letter-spacing: -0.01em; }
+.story-copy p { font-size: 14.5px; line-height: 1.7; color: var(--ink-soft); margin: 0 0 16px; }
+
+.story-visual {
+  display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: auto auto; gap: 16px;
+}
+.story-card {
+  border-radius: var(--radius-md); padding: 24px; box-shadow: var(--shadow-card);
+  display: flex; flex-direction: column; gap: 6px;
+}
+.story-card-a { background: linear-gradient(135deg, #221D45, #4834D4); color: #fff; grid-column: 1 / 3; }
+.story-card-b { background: var(--surface); border: 1px solid var(--border); }
+.story-card-c { background: var(--violet-soft); }
+.sc-value { font-family: var(--font-mono); font-size: 26px; font-weight: 600; }
+.sc-label { font-size: 12.5px; opacity: 0.75; }
+
+/* ---- Team ---- */
+.team-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.team-card {
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-md);
+  padding: 30px 20px; text-align: center; box-shadow: var(--shadow-card);
+}
+.team-avatar {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 60px; height: 60px; border-radius: 50%;
+  font-family: var(--font-display); font-weight: 700; font-size: 17px; color: #fff;
+  margin-bottom: 16px;
+}
+.avatar-violet { background: linear-gradient(135deg, #6C5CE7, #4834D4); }
+.avatar-teal { background: linear-gradient(135deg, #00CEC9, #00998F); }
+.avatar-amber { background: linear-gradient(135deg, #FDCB6E, #E8A93C); }
+.avatar-coral { background: linear-gradient(135deg, #FF8B8B, #FF6B6B); }
+.team-card h3 { font-size: 15px; font-weight: 600; margin: 0 0 4px; }
+.team-card p { font-size: 12.5px; color: var(--ink-soft); margin: 0; }
+
+/* ---- Responsive ---- */
+@media (max-width: 1020px) {
+  .story-grid { grid-template-columns: 1fr; }
+  .team-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 720px) {
+  .about-hero-inner h1 { font-size: 30px; }
+  .story-visual { grid-template-columns: 1fr; }
+  .story-card-a { grid-column: auto; }
+  .team-grid { grid-template-columns: 1fr; }
+}

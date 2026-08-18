@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard — EduNova</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+
+<div class="app">
+
+  <!-- ================= SIDEBAR ================= -->
+  <aside class="sidebar">
+    <div class="sidebar-brand">
+      <span class="brand-mark">EN</span>
+      <span class="brand-name">Edu<em>Nova</em></span>
+    </div>
+
+    <nav class="sidebar-nav">
+      <span class="nav-label">Menu</span>
+      <a href="#" class="nav-item is-active">
+        <svg viewBox="0 0 24 24" class="nav-icon"><path d="M4 13h6V4H4v9Zm0 7h6v-5H4v5Zm8 0h8V11h-8v9Zm0-16v5h8V4h-8Z"/></svg>
+        <span>Dashboard</span>
+      </a>
+      <a href="course.html" class="nav-item">
+        <svg viewBox="0 0 24 24" class="nav-icon"><path d="M4 5.5C4 4.67 4.67 4 5.5 4H12v16H5.5A1.5 1.5 0 0 1 4 18.5v-13Zm10-1.5h4.5c.83 0 1.5.67 1.5 1.5v13c0 .83-.67 1.5-1.5 1.5H14V4Z"/></svg>
+        <span>My Courses</span>
+      </a>
+      <a href="#" class="nav-item">
+        <svg viewBox="0 0 24 24" class="nav-icon"><path d="M12 2 1 8l11 6 9-4.9V17h2V8L12 2Zm0 8.7L4.4 8 12 4.3 19.6 8 12 10.7ZM5 13.2v3.7c0 1.9 3.1 4.1 7 4.1s7-2.2 7-4.1v-3.7l-7 3.8-7-3.8Z"/></svg>
+        <span>Live Classes</span>
+        <span class="nav-badge">3</span>
+      </a>
+      <a href="#" class="nav-item">
+        <svg viewBox="0 0 24 24" class="nav-icon"><path d="M7 3h10a2 2 0 0 1 2 2v16l-7-3-7 3V5a2 2 0 0 1 2-2Z"/></svg>
+        <span>Assignments</span>
+      </a>
+      <a href="#" class="nav-item">
+        <svg viewBox="0 0 24 24" class="nav-icon"><path d="M12 2a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm-3 11.5 3 3 3-3 3.5 8-3.9-1.3L13 22l-1-4.5-1 4.5-1.6-2.8L5.5 21.5 9 13.5Z"/></svg>
+        <span>Certificates</span>
+      </a>
+      <a href="#" class="nav-item">
+        <svg viewBox="0 0 24 24" class="nav-icon"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h4l3 3 3-3h6a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Z"/></svg>
+        <span>Messages</span>
+        <span class="nav-badge nav-badge-alt">5</span>
+      </a>
+
+      <span class="nav-label">Account</span>
+      <a href="#" class="nav-item">
+        <svg viewBox="0 0 24 24" class="nav-icon"><path d="M12 8a4 4 0 1 1 0 8 4 4 0 0 1 0-8Zm8.4 3.4-1.4-.4a7.4 7.4 0 0 0-.7-1.7l.7-1.3a1 1 0 0 0-.2-1.2l-1-1a1 1 0 0 0-1.2-.2l-1.3.7c-.5-.3-1.1-.6-1.7-.7l-.4-1.4A1 1 0 0 0 12.4 3h-1.4a1 1 0 0 0-1 .8l-.3 1.4c-.6.1-1.2.4-1.7.7l-1.3-.7a1 1 0 0 0-1.2.2l-1 1a1 1 0 0 0-.2 1.2l.7 1.3c-.3.5-.6 1.1-.7 1.7l-1.4.4a1 1 0 0 0-.8 1v1.4a1 1 0 0 0 .8 1l1.4.4c.1.6.4 1.2.7 1.7l-.7 1.3a1 1 0 0 0 .2 1.2l1 1a1 1 0 0 0 1.2.2l1.3-.7c.5.3 1.1.6 1.7.7l.4 1.4a1 1 0 0 0 1 .8h1.4a1 1 0 0 0 1-.8l.4-1.4c.6-.1 1.2-.4 1.7-.7l1.3.7a1 1 0 0 0 1.2-.2l1-1a1 1 0 0 0 .2-1.2l-.7-1.3c.3-.5.6-1.1.7-1.7l1.4-.4a1 1 0 0 0 .8-1v-1.4a1 1 0 0 0-.8-1Z"/></svg>
+        <span>Settings</span>
+      </a>
+      <a href="login.html" class="nav-item">
+        <svg viewBox="0 0 24 24" class="nav-icon"><path d="M10 17v-2H3v-6h7V7l5 5-5 5Zm9-14H12v2h7v14h-7v2h7a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2Z"/></svg>
+        <span>Log out</span>
+      </a>
+    </nav>
+
+    <div class="sidebar-upsell">
+      <p class="upsell-eyebrow">Go further</p>
+      <p class="upsell-title">Unlock the full<br>Data Science track</p>
+      <a href="course-details.html" class="upsell-btn">Explore plans</a>
+    </div>
+  </aside>
+
+  <!-- ================= MAIN ================= -->
+  <div class="main">
+
+    <!-- TOPBAR -->
+    <header class="topbar">
+      <div class="search">
+        <svg viewBox="0 0 24 24" class="search-icon"><path d="m21 21-4.3-4.3m2.3-5.2a7.5 7.5 0 1 1-15 0 7.5 7.5 0 0 1 15 0Z"/></svg>
+        <input type="text" placeholder="Search courses, lessons, instructors…">
+      </div>
+
+      <div class="topbar-actions">
+        <button class="icon-btn" aria-label="Notifications">
+          <svg viewBox="0 0 24 24"><path d="M12 22a2.5 2.5 0 0 0 2.45-2h-4.9A2.5 2.5 0 0 0 12 22Zm7-6-1.4-1.4V10a5.6 5.6 0 0 0-4.6-5.5V3a1 1 0 0 0-2 0v1.5A5.6 5.6 0 0 0 6.4 10v4.6L5 16v1h14v-1Z"/></svg>
+          <span class="icon-dot"></span>
+        </button>
+        <div class="topbar-divider"></div>
+        <div class="streak-chip" title="7-day learning streak">
+          <span class="streak-flame">🔥</span>
+          <span>7-day streak</span>
+        </div>
+        <div class="profile">
+          <div class="avatar-ring">
+            <span class="avatar">SP</span>
+          </div>
+          <div class="profile-meta">
+            <span class="profile-name">Shaurya Parihar</span>
+            <span class="profile-role">Frontend Track</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- CONTENT -->
+    <main class="content">
+
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-text">
+          <p class="hero-eyebrow">Tuesday, 18 August</p>
+          <h1>Good morning, Shaurya <span>👋</span></h1>
+          <p class="hero-sub">You're 62% through <strong>Frontend Development with React</strong> — one more module and Section 4 is done.</p>
+          <div class="hero-actions">
+            <a href="#" class="btn btn-primary">Resume lesson</a>
+            <a href="#" class="btn btn-ghost">View schedule</a>
+          </div>
+        </div>
+        <div class="hero-ring" role="img" aria-label="62 percent complete">
+          <svg viewBox="0 0 140 140" class="ring-svg">
+            <circle cx="70" cy="70" r="60" class="ring-track"/>
+            <circle cx="70" cy="70" r="60" class="ring-progress"/>
+          </svg>
+          <div class="ring-center">
+            <span class="ring-value">62%</span>
+            <span class="ring-label">Module 4</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- STATS -->
+      <section class="stats">
+        <div class="stat-card">
+          <div class="stat-icon stat-icon-violet">
+            <svg viewBox="0 0 24 24"><path d="M4 5.5C4 4.67 4.67 4 5.5 4H12v16H5.5A1.5 1.5 0 0 1 4 18.5v-13Zm10-1.5h4.5c.83 0 1.5.67 1.5 1.5v13c0 .83-.67 1.5-1.5 1.5H14V4Z"/></svg>
+          </div>
+          <div>
+            <span class="stat-value">6</span>
+            <span class="stat-label">Enrolled courses</span>
+          </div>
+          <span class="stat-trend up">+1 this month</span>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon stat-icon-teal">
+            <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm1 10.6 4.6 2.7-1 1.7L11 14V6h2Z"/></svg>
+          </div>
+          <div>
+            <span class="stat-value">18.5<small>h</small></span>
+            <span class="stat-label">Learned this week</span>
+          </div>
+          <span class="stat-trend up">+3.2h vs last week</span>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon stat-icon-amber">
+            <svg viewBox="0 0 24 24"><path d="M12 2a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm-3 11.5 3 3 3-3 3.5 8-3.9-1.3L13 22l-1-4.5-1 4.5-1.6-2.8L5.5 21.5 9 13.5Z"/></svg>
+          </div>
+          <div>
+            <span class="stat-value">4</span>
+            <span class="stat-label">Certificates earned</span>
+          </div>
+          <span class="stat-trend neutral">1 in review</span>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon stat-icon-coral">
+            <svg viewBox="0 0 24 24"><path d="M13.5 2 4 14h6l-1 8 9.5-12h-6l1-8Z"/></svg>
+          </div>
+          <div>
+            <span class="stat-value">92<small>%</small></span>
+            <span class="stat-label">Avg. quiz score</span>
+          </div>
+          <span class="stat-trend up">Top 15% of cohort</span>
+        </div>
+      </section>
+
+      <!-- CONTINUE LEARNING -->
+      <section class="panel">
+        <div class="panel-head">
+          <h2>Continue learning</h2>
+          <a href="course.html" class="panel-link">View all courses →</a>
+        </div>
+
+        <div class="course-row">
+          <article class="course-card">
+            <div class="course-thumb thumb-violet">
+              <span class="course-tag">React</span>
+            </div>
+            <div class="course-body">
+              <h3>Frontend Development with React</h3>
+              <p>Priya Nair · 42 lessons</p>
+              <div class="progress">
+                <div class="progress-bar" style="width:62%"></div>
+              </div>
+              <div class="course-foot">
+                <span>62% complete</span>
+                <a href="#" class="course-resume">Resume</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="course-card">
+            <div class="course-thumb thumb-teal">
+              <span class="course-tag">Design</span>
+            </div>
+            <div class="course-body">
+              <h3>UI/UX Design Fundamentals</h3>
+              <p>Arjun Mehta · 28 lessons</p>
+              <div class="progress">
+                <div class="progress-bar" style="width:38%"></div>
+              </div>
+              <div class="course-foot">
+                <span>38% complete</span>
+                <a href="#" class="course-resume">Resume</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="course-card">
+            <div class="course-thumb thumb-amber">
+              <span class="course-tag">Data</span>
+            </div>
+            <div class="course-body">
+              <h3>Python for Data Science</h3>
+              <p>Kavita Rao · 51 lessons</p>
+              <div class="progress">
+                <div class="progress-bar" style="width:15%"></div>
+              </div>
+              <div class="course-foot">
+                <span>15% complete</span>
+                <a href="#" class="course-resume">Resume</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ROADMAP -->
+      <section class="panel">
+        <div class="panel-head">
+          <h2>Your path in React</h2>
+          <span class="panel-sub">4 of 7 modules complete</span>
+        </div>
+
+        <div class="roadmap">
+          <div class="roadmap-line"></div>
+
+          <div class="road-node is-done">
+            <span class="node-dot">✓</span>
+            <span class="node-label">HTML &amp; CSS Recap</span>
+          </div>
+          <div class="road-node is-done">
+            <span class="node-dot">✓</span>
+            <span class="node-label">JavaScript Essentials</span>
+          </div>
+          <div class="road-node is-done">
+            <span class="node-dot">✓</span>
+            <span class="node-label">React Basics</span>
+          </div>
+          <div class="road-node is-current">
+            <span class="node-dot">4</span>
+            <span class="node-label">Hooks &amp; State</span>
+          </div>
+          <div class="road-node is-locked">
+            <span class="node-dot">5</span>
+            <span class="node-label">Routing</span>
+          </div>
+          <div class="road-node is-locked">
+            <span class="node-dot">6</span>
+            <span class="node-label">API Integration</span>
+          </div>
+          <div class="road-node is-locked">
+            <span class="node-dot">7</span>
+            <span class="node-label">Capstone Project</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- LOWER GRID -->
+      <section class="lower-grid">
+
+        <div class="panel">
+          <div class="panel-head">
+            <h2>Upcoming live classes</h2>
+            <a href="#" class="panel-link">Full calendar →</a>
+          </div>
+          <ul class="timeline">
+            <li>
+              <span class="tl-date"><strong>19</strong>Aug</span>
+              <div class="tl-body">
+                <p class="tl-title">React Hooks — Live Q&amp;A</p>
+                <p class="tl-meta">6:00 PM · Priya Nair</p>
+              </div>
+              <a href="#" class="tl-join">Join</a>
+            </li>
+            <li>
+              <span class="tl-date"><strong>21</strong>Aug</span>
+              <div class="tl-body">
+                <p class="tl-title">Figma to Code Workshop</p>
+                <p class="tl-meta">5:30 PM · Arjun Mehta</p>
+              </div>
+              <a href="#" class="tl-join">Join</a>
+            </li>
+            <li>
+              <span class="tl-date"><strong>24</strong>Aug</span>
+              <div class="tl-body">
+                <p class="tl-title">Pandas Deep Dive</p>
+                <p class="tl-meta">7:00 PM · Kavita Rao</p>
+              </div>
+              <a href="#" class="tl-join">Join</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="panel">
+          <div class="panel-head">
+            <h2>Achievements</h2>
+            <span class="panel-sub">4 of 8 unlocked</span>
+          </div>
+          <div class="badge-grid">
+            <div class="badge is-unlocked">
+              <span class="badge-icon">🎯</span>
+              <span>First Lesson</span>
+            </div>
+            <div class="badge is-unlocked">
+              <span class="badge-icon">🔥</span>
+              <span>7-Day Streak</span>
+            </div>
+            <div class="badge is-unlocked">
+              <span class="badge-icon">🧠</span>
+              <span>Quiz Master</span>
+            </div>
+            <div class="badge is-unlocked">
+              <span class="badge-icon">📜</span>
+              <span>First Certificate</span>
+            </div>
+            <div class="badge">
+              <span class="badge-icon">🌙</span>
+              <span>Night Owl</span>
+            </div>
+            <div class="badge">
+              <span class="badge-icon">🚀</span>
+              <span>Fast Finisher</span>
+            </div>
+            <div class="badge">
+              <span class="badge-icon">🤝</span>
+              <span>Study Group</span>
+            </div>
+            <div class="badge">
+              <span class="badge-icon">🏆</span>
+              <span>Top of Cohort</span>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+    </main>
+  </div>
+</div>
+
+</body>
+</html>

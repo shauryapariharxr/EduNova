@@ -1,85 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EduLearn</title>
-    <link rel="stylesheet" href="./css/index.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EduNova — Learn skills that move you forward</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/home.css">
 </head>
 <body>
-     <section>
-        <header class="header">
-          <img id="logo" src="../images/logo.png" alt="">
-          <nav class="nav-link">
-            <li><a href="../index.html"> Home</a></li>
-            <li><a href="../about.html"> About</a></li>
-            <li><a href="../course.html"> Course</a></li>
-            <li><a href="../student.html"> Student</a></li>
-            <li><a href="../contact.html"> Contact Us</a></li>
-          
-          
-          </nav>
-          <div class="btn-div">
-            <a  class="btn" href="../register.html"> <button> Register</button></a>
-            <a  class="btn" href="../login.html"> <button> Login</button></a>
-          </div>
 
+<!-- ================= NAV ================= -->
+<header class="site-nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">EN</span>
+      <span class="brand-name">Edu<em>Nova</em></span>
+    </a>
 
-        </header>
-    </section>
-    <main>
-        <h1>home pgae </h1>
-    </main>
+    <nav class="nav-links">
+      <a href="index.html" class="is-active">Home</a>
+      <a href="course.html">Courses</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
 
-    <!-- footer -->
-    <footer class="footer">
-        <div>
-            <!-- div top -->
-             <div class="top-footer">
-                <!-- item 1 -->
-                 <div class="item-1 item">
-                 <h4>EduLearn</h4>
-                 <p>Simple and practical web development training for students</p>
-                 <!-- social icons -->
-                  <div class="social-icons">
-                    <a href="#"><img src="./images/facebook-logo.png" alt=""></a>
-                     <a href="#"><img src="./images/linkedin.png" alt=""></a>
-                      <a href="#"><img src="./images/youtube.png" alt=""></a>
-                       <a href="#"><img src="./images/twitter.png" alt=""></a>
-                  </div>
-                 </div>
-                  
-                    <!-- item 2 -->
-                  
-                 <div class="item">
-                     <h4>Quick learn</h4>
-                     <li><a href="./index.html">Home</a></li>
-                     <li><a href="./about.html">About</a></li>
-                     <li><a href="./course.html">Course</a></li>
-                     <li><a href="./contact.html">Contact</a></li>
-                 </div>
-                  <!-- item 3 -->
-                   <div class="item">
-                    <h4>Support</h4>
-                    <li><a href="./login.html">Login</a></li>
-                    <li><a href="./register.html">Register</a></li>
-                    <li><a href="./refund.html">Refund</a></li>
-                   </div>
-                   <!-- item 4 -->
-                    <div class="item">
-                        <h4>Legal</h4>
-                        <li><a href="./term-condition.html">Term & Condition</a></li>
-                         <li><a href="./privacy-policy.html">Privacy & policy</a></li>
-                          <li><a href="./refund.html">Refund</a></li>
-                          
-                    </div>
-             </div>
-             <hr>
-             <div class="bottom-section">
-               <p> 2026 Education. All rights reserved. | For educational traning purpose.</p>
-             </div>
+    <div class="nav-actions">
+      <a href="login.html" class="btn btn-text">Log in</a>
+      <a href="register.html" class="btn btn-primary">Get started</a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- ================= HERO ================= -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <span class="eyebrow">7,000+ learners already onboard</span>
+        <h1>Skills that move your <span>career</span>, not just your resume.</h1>
+        <p>EduNova pairs self-paced courses with live mentorship, so you actually finish what you start — and can prove it with a certificate that means something.</p>
+        <div class="hero-actions">
+          <a href="register.html" class="btn btn-primary btn-lg">Start learning free</a>
+          <a href="course.html" class="btn btn-outline btn-lg">Browse courses</a>
         </div>
-    </footer>
-    
+        <div class="hero-proof">
+          <div class="avatar-stack">
+            <span></span><span></span><span></span><span></span>
+          </div>
+          <p><strong>4.8/5</strong> average rating from 2,300+ reviews</p>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="float-card card-main">
+          <div class="fc-head">
+            <span class="fc-thumb thumb-violet"></span>
+            <div>
+              <p class="fc-title">Frontend Development with React</p>
+              <p class="fc-sub">Priya Nair · 42 lessons</p>
+            </div>
+          </div>
+          <div class="fc-progress"><div style="width:62%"></div></div>
+          <p class="fc-foot">62% complete · Module 4 of 7</p>
+        </div>
+
+        <div class="float-card card-stat card-stat-a">
+          <span class="cs-icon">🔥</span>
+          <div>
+            <p class="cs-value">7-day</p>
+            <p class="cs-label">learning streak</p>
+          </div>
+        </div>
+
+        <div class="float-card card-stat card-stat-b">
+          <span class="cs-icon">📜</span>
+          <div>
+            <p class="cs-value">Certified</p>
+            <p class="cs-label">on completion</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= STATS STRIP ================= -->
+  <section class="stats-strip">
+    <div class="stats-inner">
+      <div><span>500+</span><p>Courses across 12 tracks</p></div>
+      <div><span>7,000+</span><p>Active learners</p></div>
+      <div><span>120+</span><p>Industry mentors</p></div>
+      <div><span>92%</span><p>Course completion rate</p></div>
+    </div>
+  </section>
+
+  <!-- ================= FEATURES ================= -->
+  <section class="section">
+    <div class="section-head">
+      <span class="eyebrow eyebrow-dark">Why EduNova</span>
+      <h2>Built so you actually finish</h2>
+      <p>Most course platforms are optimized for sign-ups. We're optimized for the moment you hit "complete."</p>
+    </div>
+
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="feature-icon icon-violet">
+          <svg viewBox="0 0 24 24"><path d="M12 2 1 8l11 6 9-4.9V17h2V8L12 2Zm0 8.7L4.4 8 12 4.3 19.6 8 12 10.7ZM5 13.2v3.7c0 1.9 3.1 4.1 7 4.1s7-2.2 7-4.1v-3.7l-7 3.8-7-3.8Z"/></svg>
+        </div>
+        <h3>Learn at your pace</h3>
+        <p>Bite-sized lessons with progress tracking, so you can pick up exactly where you left off — on any device.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon icon-teal">
+          <svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h4l3 3 3-3h6a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Z"/></svg>
+        </div>
+        <h3>Live mentorship</h3>
+        <p>Weekly live sessions with working professionals, plus a Q&amp;A inbox that actually gets answered.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon icon-amber">
+          <svg viewBox="0 0 24 24"><path d="M12 2a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm-3 11.5 3 3 3-3 3.5 8-3.9-1.3L13 22l-1-4.5-1 4.5-1.6-2.8L5.5 21.5 9 13.5Z"/></svg>
+        </div>
+        <h3>Certificates that count</h3>
+        <p>Verified, shareable certificates tied to real project work — not just a quiz you clicked through.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon icon-coral">
+          <svg viewBox="0 0 24 24"><path d="M13.5 2 4 14h6l-1 8 9.5-12h-6l1-8Z"/></svg>
+        </div>
+        <h3>Career support</h3>
+        <p>Resume reviews, mock interviews, and a hiring partner network for when you're ready for the next step.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= COURSES ================= -->
+  <section class="section section-alt">
+    <div class="section-head section-head-row">
+      <div>
+        <span class="eyebrow eyebrow-dark">Popular right now</span>
+        <h2>Pick up a new track this month</h2>
+      </div>
+      <a href="course.html" class="link-arrow">View all courses →</a>
+    </div>
+
+    <div class="course-grid">
+      <article class="course-card">
+        <div class="course-thumb thumb-violet"><span class="course-tag">React</span></div>
+        <div class="course-body">
+          <h3>Frontend Development with React</h3>
+          <p>Priya Nair · 42 lessons · Beginner–Intermediate</p>
+          <div class="course-foot">
+            <span class="course-price">₹2,499</span>
+            <a href="course-details.html" class="course-cta">Explore →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="course-card">
+        <div class="course-thumb thumb-teal"><span class="course-tag">Design</span></div>
+        <div class="course-body">
+          <h3>UI/UX Design Fundamentals</h3>
+          <p>Arjun Mehta · 28 lessons · Beginner</p>
+          <div class="course-foot">
+            <span class="course-price">₹1,999</span>
+            <a href="course-details.html" class="course-cta">Explore →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="course-card">
+        <div class="course-thumb thumb-amber"><span class="course-tag">Data</span></div>
+        <div class="course-body">
+          <h3>Python for Data Science</h3>
+          <p>Kavita Rao · 51 lessons · Intermediate</p>
+          <div class="course-foot">
+            <span class="course-price">₹2,999</span>
+            <a href="course-details.html" class="course-cta">Explore →</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ================= CTA BANNER ================= -->
+  <section class="cta-banner">
+    <div class="cta-inner">
+      <div>
+        <h2>Your next skill is one course away.</h2>
+        <p>Join free — no credit card, cancel anytime.</p>
+      </div>
+      <a href="register.html" class="btn btn-primary btn-lg">Create free account</a>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">EN</span>
+        <span class="brand-name">Edu<em>Nova</em></span>
+      </a>
+      <p>Practical courses, real mentors, certificates that hold up.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Product</h4>
+      <a href="course.html">Courses</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="refund.html">Refund policy</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Company</h4>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy-policy.html">Privacy policy</a>
+      <a href="term-condition.html">Terms</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Follow</h4>
+      <a href="#">Facebook</a>
+      <a href="#">Twitter</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">YouTube</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 EduNova. All rights reserved.</p>
+  </div>
+</footer>
+
 </body>
 </html>

@@ -1,11 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Log in — EduNova</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/auth.css">
 </head>
 <body>
-    this is login page
+
+<div class="auth-shell">
+
+  <!-- ============ BRAND PANEL ============ -->
+  <aside class="auth-brand">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">EN</span>
+      <span class="brand-name">Edu<em>Nova</em></span>
+    </a>
+
+    <div class="auth-brand-mid">
+      <h1>Pick up right where you left off.</h1>
+      <p>Your courses, streak, and certificates are all waiting on the other side.</p>
+
+      <div class="mini-roadmap">
+        <div class="mr-node is-done">✓</div>
+        <div class="mr-line"></div>
+        <div class="mr-node is-done">✓</div>
+        <div class="mr-line"></div>
+        <div class="mr-node is-current">4</div>
+        <div class="mr-line is-locked"></div>
+        <div class="mr-node is-locked">5</div>
+      </div>
+    </div>
+
+    <blockquote class="auth-quote">
+      <p>“The live mentor sessions are what actually got me to finish the React track — not just another course I paid for and forgot.”</p>
+      <cite>— Ananya Verma, Frontend Track</cite>
+    </blockquote>
+  </aside>
+
+  <!-- ============ FORM PANEL ============ -->
+  <main class="auth-form-panel">
+    <div class="auth-form-wrap">
+
+      <a href="index.html" class="brand brand-mobile">
+        <span class="brand-mark">EN</span>
+        <span class="brand-name">Edu<em>Nova</em></span>
+      </a>
+
+      <h2>Welcome back</h2>
+      <p class="auth-sub">Log in to continue your learning streak.</p>
+
+      <div class="oauth-row">
+        <button type="button" class="oauth-btn">
+          <svg viewBox="0 0 24 24" width="18" height="18"><path fill="#EA4335" d="M12 10.2v3.9h5.5c-.24 1.4-1.7 4.1-5.5 4.1-3.3 0-6-2.7-6-6.2s2.7-6.2 6-6.2c1.9 0 3.2.8 3.9 1.5l2.7-2.6C16.9 3 14.7 2 12 2 6.9 2 2.7 6.1 2.7 11.2S6.9 20.4 12 20.4c6.9 0 9.6-4.8 9.6-7.3 0-.5 0-.9-.1-1.3H12Z"/></svg>
+          Google
+        </button>
+        <button type="button" class="oauth-btn">
+          <svg viewBox="0 0 24 24" width="18" height="18"><path fill="#1877F2" d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12Z"/></svg>
+          Facebook
+        </button>
+      </div>
+
+      <div class="divider"><span>or continue with email</span></div>
+
+      <form class="auth-form" onsubmit="return false;">
+        <label class="field">
+          <span>Email address</span>
+          <input type="email" placeholder="you@example.com" required>
+        </label>
+
+        <label class="field">
+          <span>Password</span>
+          <input type="password" placeholder="Enter your password" required>
+        </label>
+
+        <div class="field-row">
+          <label class="checkbox">
+            <input type="checkbox">
+            <span>Remember me</span>
+          </label>
+          <a href="#" class="link-muted">Forgot password?</a>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">Log in</button>
+      </form>
+
+      <p class="auth-switch">New to EduNova? <a href="register.html">Create a free account</a></p>
+    </div>
+  </main>
+
+</div>
+
 </body>
 </html>
