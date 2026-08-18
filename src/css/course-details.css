@@ -1,0 +1,60 @@
+/* ==========================================================
+   EduNova · Course details
+   Extends css/home.css (tokens, nav, footer, panel, course-grid,
+   section-alt already defined — load home.css first)
+   ========================================================== */
+
+.cd-hero {
+  background: linear-gradient(120deg, #211D45 0%, #362D78 55%, #6C5CE7 130%);
+  padding: 56px 32px;
+  color: #fff;
+}
+.cd-hero-inner { max-width: 1180px; margin: 0 auto; }
+.course-tag-dark { background: rgba(255,255,255,0.18); display: inline-block; margin-bottom: 16px; }
+.cd-hero-copy h1 { font-family: var(--font-display); font-size: 34px; font-weight: 700; margin: 0 0 14px; letter-spacing: -0.01em; max-width: 640px; }
+.cd-hero-copy p { font-size: 15px; line-height: 1.6; color: rgba(255,255,255,0.78); max-width: 560px; margin: 0 0 22px; }
+.cd-meta { display: flex; gap: 22px; flex-wrap: wrap; font-size: 13.5px; color: rgba(255,255,255,0.85); }
+
+.cd-body { padding-top: 44px; }
+.cd-grid { display: grid; grid-template-columns: 1fr 340px; gap: 24px; align-items: start; }
+.cd-main { display: flex; flex-direction: column; gap: 20px; }
+.cd-main .panel h2 { font-family: var(--font-display); font-size: 18px; font-weight: 700; margin: 0 0 12px; }
+.cd-main .panel p { font-size: 14px; line-height: 1.65; color: var(--ink-soft); margin: 0; }
+
+/* ---- Curriculum ---- */
+.curriculum-list { display: flex; flex-direction: column; gap: 8px; }
+.curriculum-list details {
+  border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 14px 16px;
+}
+.curriculum-list summary {
+  list-style: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between;
+  font-size: 14px; font-weight: 600;
+}
+.curriculum-list summary::-webkit-details-marker { display: none; }
+.cur-meta { font-size: 12px; font-weight: 500; color: var(--ink-faint); }
+.curriculum-list p { font-size: 13px; color: var(--ink-soft); margin: 10px 0 0; line-height: 1.55; }
+
+/* ---- Instructor ---- */
+.instructor-row { display: flex; align-items: flex-start; gap: 16px; }
+.instructor-row h3 { font-size: 15px; font-weight: 600; margin: 0 0 6px; }
+.instructor-row p { margin: 0; font-size: 13.5px; }
+
+/* ---- Sticky enroll card ---- */
+.cd-sidebar { position: sticky; top: 90px; }
+.enroll-card {
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg);
+  padding: 22px; box-shadow: var(--shadow-card);
+}
+.enroll-thumb { height: 110px; border-radius: var(--radius-md); margin-bottom: 18px; }
+.enroll-price { font-family: var(--font-mono); font-size: 26px; font-weight: 600; margin: 0 0 14px; }
+.enroll-list { list-style: none; margin: 18px 0 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+.enroll-list li { font-size: 13px; color: var(--ink-soft); }
+
+@media (max-width: 1020px) {
+  .cd-grid { grid-template-columns: 1fr; }
+  .cd-sidebar { position: static; }
+}
+@media (max-width: 640px) {
+  .cd-hero-copy h1 { font-size: 26px; }
+  .cd-meta { gap: 12px; }
+}

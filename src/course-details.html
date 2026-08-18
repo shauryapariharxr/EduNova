@@ -1,84 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Course Dtails</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Frontend Development with React — EduNova</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/home.css">
+<link rel="stylesheet" href="css/course-details.css">
 </head>
 <body>
-       <section>
-        <header class="header">
-          <img id="logo" src="../images/logo.png" alt="">
-          <nav class="nav-link">
-            <li><a href="../index.html"> Home</a></li>
-            <li><a href="../about.html"> About</a></li>
-            <li><a href="../course.html"> Course</a></li>
-            <li><a href="../student.html"> Student</a></li>
-            <li><a href="../contact.html"> Contact Us</a></li>
 
+<header class="site-nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">EN</span>
+      <span class="brand-name">Edu<em>Nova</em></span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="course.html" class="is-active">Courses</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="login.html" class="btn btn-text">Log in</a>
+      <a href="register.html" class="btn btn-primary">Get started</a>
+    </div>
+  </div>
+</header>
 
-          </nav>
-          <div class="btn-div">
-            <a  class="btn" href="../register.html"> <button> Register</button></a>
-            <a  class="btn" href="../login.html"> <button> Login</button></a>
-          </div>
+<main>
 
-
-        </header>
-    </section>
-    <main>
-        <h1>home pgae </h1>
-    </main>
-
-    <!-- footer -->
-    <footer class="footer">
-        <div>
-            <!-- div top -->
-             <div class="top-footer">
-                <!-- item 1 -->
-                 <div class="item-1 item">
-                 <h4>EduLearn</h4>
-                 <p>Simple and practical web development training for students</p>
-                 <!-- social icons -->
-                  <div class="social-icons">
-                    <a href="#"><img src="./images/facebook-logo.png" alt=""></a>
-                     <a href="#"><img src="./images/linkedin.png" alt=""></a>
-                      <a href="#"><img src="./images/youtube.png" alt=""></a>
-                       <a href="#"><img src="./images/twitter.png" alt=""></a>
-                  </div>
-                 </div>
-
-                    <!-- item 2 -->
-
-                 <div class="item">
-                     <h4>Quick learn</h4>
-                     <li><a href="./index.html">Home</a></li>
-                     <li><a href="./about.html">About</a></li>
-                     <li><a href="./course.html">Course</a></li>
-                     <li><a href="./contact.html">Contact</a></li>
-                 </div>
-                  <!-- item 3 -->
-                   <div class="item">
-                    <h4>Support</h4>
-                    <li><a href="./login.html">Login</a></li>
-                    <li><a href="./register.html">Register</a></li>
-                    <li><a href="./refund.html">Refund</a></li>
-                   </div>
-                   <!-- item 4 -->
-                    <div class="item">
-                        <h4>Legal</h4>
-                        <li><a href="./term-condition.html">Term & Condition</a></li>
-                         <li><a href="./privacy-policy.html">Privacy & policy</a></li>
-                          <li><a href="./refund.html">Refund</a></li>
-
-                    </div>
-             </div>
-             <hr>
-             <div class="bottom-section">
-               <p> 2026 Education. All rights reserved. | For educational traning purpose.</p>
-             </div>
+  <!-- ================= COURSE HERO ================= -->
+  <section class="cd-hero">
+    <div class="cd-hero-inner">
+      <div class="cd-hero-copy">
+        <span class="course-tag course-tag-dark">React</span>
+        <h1>Frontend Development with React</h1>
+        <p>Go from HTML/CSS basics to shipping a production-ready React app — with a live mentor checking your work every week.</p>
+        <div class="cd-meta">
+          <span>⭐ 4.8 (620 reviews)</span>
+          <span>👥 1,240 students</span>
+          <span>🕒 42 lessons · 9 hours</span>
         </div>
-    </footer>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= BODY ================= -->
+  <section class="section cd-body">
+    <div class="cd-grid">
+
+      <div class="cd-main">
+
+        <div class="panel">
+          <h2>About this course</h2>
+          <p>This track takes you from JavaScript fundamentals through React hooks, routing, and API integration, ending in a capstone project you'll ship and can show in interviews. Built for people who've tried "learn React in a weekend" tutorials before and didn't retain much.</p>
+        </div>
+
+        <div class="panel">
+          <div class="panel-head">
+            <h2>Curriculum</h2>
+            <span class="panel-sub">7 modules · 42 lessons</span>
+          </div>
+          <div class="curriculum-list">
+            <details open>
+              <summary><span>1. HTML &amp; CSS Recap</span><span class="cur-meta">6 lessons</span></summary>
+              <p>Refresh semantic HTML, flexbox/grid, and responsive layout before jumping into JS.</p>
+            </details>
+            <details>
+              <summary><span>2. JavaScript Essentials</span><span class="cur-meta">8 lessons</span></summary>
+              <p>Variables, functions, array methods, async/await — everything React assumes you already know.</p>
+            </details>
+            <details>
+              <summary><span>3. React Basics</span><span class="cur-meta">7 lessons</span></summary>
+              <p>Components, JSX, props, and your first rendered app.</p>
+            </details>
+            <details>
+              <summary><span>4. Hooks &amp; State</span><span class="cur-meta">6 lessons</span></summary>
+              <p>useState, useEffect, and managing state that actually scales.</p>
+            </details>
+            <details>
+              <summary><span>5. Routing</span><span class="cur-meta">5 lessons</span></summary>
+              <p>Multi-page apps with React Router.</p>
+            </details>
+            <details>
+              <summary><span>6. API Integration</span><span class="cur-meta">5 lessons</span></summary>
+              <p>Fetching, loading states, and error handling with real endpoints.</p>
+            </details>
+            <details>
+              <summary><span>7. Capstone Project</span><span class="cur-meta">5 lessons</span></summary>
+              <p>Build and ship a full app, reviewed live by your mentor.</p>
+            </details>
+          </div>
+        </div>
+
+        <div class="panel instructor-panel">
+          <h2>Your instructor</h2>
+          <div class="instructor-row">
+            <span class="team-avatar avatar-violet">PN</span>
+            <div>
+              <h3>Priya Nair</h3>
+              <p>Senior Frontend Engineer · 8 years building production React apps. Has taught 2,400+ students at EduNova.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ================= STICKY ENROLL CARD ================= -->
+      <aside class="cd-sidebar">
+        <div class="enroll-card">
+          <div class="enroll-thumb thumb-violet"></div>
+          <p class="enroll-price">₹2,499</p>
+          <a href="register.html" class="btn btn-primary btn-block">Enroll now</a>
+          <ul class="enroll-list">
+            <li>✓ 42 lessons, 9 hours of content</li>
+            <li>✓ Weekly live mentor sessions</li>
+            <li>✓ Verified certificate on completion</li>
+            <li>✓ Lifetime access</li>
+            <li>✓ 7-day refund window</li>
+          </ul>
+        </div>
+      </aside>
+
+    </div>
+  </section>
+
+  <!-- ================= RELATED ================= -->
+  <section class="section section-alt">
+    <div class="section-head-row">
+      <div>
+        <span class="eyebrow eyebrow-dark">Related</span>
+        <h2>You might also like</h2>
+      </div>
+      <a href="course.html" class="link-arrow">View all courses →</a>
+    </div>
+    <div class="course-grid">
+      <article class="course-card">
+        <div class="course-thumb thumb-teal"><span class="course-tag">Design</span></div>
+        <div class="course-body">
+          <h3>UI/UX Design Fundamentals</h3>
+          <p>Arjun Mehta · 28 lessons</p>
+          <div class="course-foot">
+            <span class="course-price">₹1,999</span>
+            <a href="course-details.html" class="course-cta">Explore →</a>
+          </div>
+        </div>
+      </article>
+      <article class="course-card">
+        <div class="course-thumb thumb-violet"><span class="course-tag">Backend</span></div>
+        <div class="course-body">
+          <h3>Node.js &amp; Express APIs</h3>
+          <p>Rohan Kapoor · 38 lessons</p>
+          <div class="course-foot">
+            <span class="course-price">₹2,799</span>
+            <a href="course-details.html" class="course-cta">Explore →</a>
+          </div>
+        </div>
+      </article>
+      <article class="course-card">
+        <div class="course-thumb thumb-amber"><span class="course-tag">Data</span></div>
+        <div class="course-body">
+          <h3>Python for Data Science</h3>
+          <p>Kavita Rao · 51 lessons</p>
+          <div class="course-foot">
+            <span class="course-price">₹2,999</span>
+            <a href="course-details.html" class="course-cta">Explore →</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">EN</span>
+        <span class="brand-name">Edu<em>Nova</em></span>
+      </a>
+      <p>Practical courses, real mentors, certificates that hold up.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Product</h4>
+      <a href="course.html">Courses</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="refund.html">Refund policy</a>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy-policy.html">Privacy policy</a>
+      <a href="term-condition.html">Terms</a>
+    </div>
+    <div class="footer-col">
+      <h4>Follow</h4>
+      <a href="#">Facebook</a>
+      <a href="#">Twitter</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">YouTube</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 EduNova. All rights reserved.</p>
+  </div>
+</footer>
 
 </body>
 </html>

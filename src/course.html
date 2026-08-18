@@ -1,84 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Course</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Courses — EduNova</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/home.css">
+<link rel="stylesheet" href="css/course.css">
 </head>
 <body>
-     <section>
-        <header class="header">
-          <img id="logo" src="../images/logo.png" alt="">
-          <nav class="nav-link">
-            <li><a href="../index.html"> Home</a></li>
-            <li><a href="../about.html"> About</a></li>
-            <li><a href="../course.html"> Course</a></li>
-            <li><a href="../student.html"> Student</a></li>
-            <li><a href="../contact.html"> Contact Us</a></li>
 
+<header class="site-nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">EN</span>
+      <span class="brand-name">Edu<em>Nova</em></span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="course.html" class="is-active">Courses</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="login.html" class="btn btn-text">Log in</a>
+      <a href="register.html" class="btn btn-primary">Get started</a>
+    </div>
+  </div>
+</header>
 
-          </nav>
-          <div class="btn-div">
-            <a  class="btn" href="../register.html"> <button> Register</button></a>
-            <a  class="btn" href="../login.html"> <button> Login</button></a>
+<main>
+
+  <section class="about-hero">
+    <div class="about-hero-inner">
+      <span class="eyebrow">500+ courses</span>
+      <h1>Find the skill you actually want to finish.</h1>
+      <p>Every course pairs recorded lessons with a live mentor and a cohort — pick a track and start this week.</p>
+    </div>
+  </section>
+
+  <section class="section course-catalog">
+    <div class="filter-bar">
+      <button class="filter-pill is-active">All</button>
+      <button class="filter-pill">Web Development</button>
+      <button class="filter-pill">Design</button>
+      <button class="filter-pill">Data Science</button>
+      <button class="filter-pill">Marketing</button>
+      <div class="filter-search">
+        <svg viewBox="0 0 24 24"><path d="m21 21-4.3-4.3m2.3-5.2a7.5 7.5 0 1 1-15 0 7.5 7.5 0 0 1 15 0Z"/></svg>
+        <input type="text" placeholder="Search courses…">
+      </div>
+    </div>
+
+    <div class="course-grid-full">
+      <article class="course-card">
+        <div class="course-thumb thumb-violet"><span class="course-tag">React</span></div>
+        <div class="course-body">
+          <p class="course-level">Beginner–Intermediate</p>
+          <h3>Frontend Development with React</h3>
+          <p>Priya Nair · 42 lessons</p>
+          <div class="course-foot">
+            <span class="course-price">₹2,499</span>
+            <a href="course-details.html" class="course-cta">Explore →</a>
           </div>
-
-
-        </header>
-    </section>
-    <main>
-        <h1>home pgae </h1>
-    </main>
-
-    <!-- footer -->
-    <footer class="footer">
-        <div>
-            <!-- div top -->
-             <div class="top-footer">
-                <!-- item 1 -->
-                 <div class="item-1 item">
-                 <h4>EduLearn</h4>
-                 <p>Simple and practical web development training for students</p>
-                 <!-- social icons -->
-                  <div class="social-icons">
-                    <a href="#"><img src="./images/facebook-logo.png" alt=""></a>
-                     <a href="#"><img src="./images/linkedin.png" alt=""></a>
-                      <a href="#"><img src="./images/youtube.png" alt=""></a>
-                       <a href="#"><img src="./images/twitter.png" alt=""></a>
-                  </div>
-                 </div>
-
-                    <!-- item 2 -->
-
-                 <div class="item">
-                     <h4>Quick learn</h4>
-                     <li><a href="./index.html">Home</a></li>
-                     <li><a href="./about.html">About</a></li>
-                     <li><a href="./course.html">Course</a></li>
-                     <li><a href="./contact.html">Contact</a></li>
-                 </div>
-                  <!-- item 3 -->
-                   <div class="item">
-                    <h4>Support</h4>
-                    <li><a href="./login.html">Login</a></li>
-                    <li><a href="./register.html">Register</a></li>
-                    <li><a href="./refund.html">Refund</a></li>
-                   </div>
-                   <!-- item 4 -->
-                    <div class="item">
-                        <h4>Legal</h4>
-                        <li><a href="./term-condition.html">Term & Condition</a></li>
-                         <li><a href="./privacy-policy.html">Privacy & policy</a></li>
-                          <li><a href="./refund.html">Refund</a></li>
-
-                    </div>
-             </div>
-             <hr>
-             <div class="bottom-section">
-               <p> 2026 Education. All rights reserved. | For educational traning purpose.</p>
-             </div>
         </div>
-    </footer>
+      </article>
+
+      <article class="course-card">
+        <div class="course-thumb thumb-teal"><span class="course-tag">Design</span></div>
+        <div class="course-body">
+          <p class="course-level">Beginner</p>
+          <h3>UI/UX Design Fundamentals</h3>
+          <p>Arjun Mehta · 28 lessons</p>
+          <div class="course-foot">
+            <span class="course-price">₹1,999</span>
+            <a href="course-details.html" class="course-cta">Explore →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="course-card">
+        <div class="course-thumb thumb-amber"><span class="course-tag">Data</span></div>
+        <div class="course-body">
+          <p class="course-level">Intermediate</p>
+          <h3>Python for Data Science</h3>
+          <p>Kavita Rao · 51 lessons</p>
+          <div class="course-foot">
+            <span class="course-price">₹2,999</span>
+            <a href="course-details.html" class="course-cta">Explore →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="course-card">
+        <div class="course-thumb thumb-coral"><span class="course-tag">Marketing</span></div>
+        <div class="course-body">
+          <p class="course-level">Beginner</p>
+          <h3>Digital Marketing Mastery</h3>
+          <p>Neha Bansal · 34 lessons</p>
+          <div class="course-foot">
+            <span class="course-price">₹1,799</span>
+            <a href="course-details.html" class="course-cta">Explore →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="course-card">
+        <div class="course-thumb thumb-violet"><span class="course-tag">Backend</span></div>
+        <div class="course-body">
+          <p class="course-level">Intermediate</p>
+          <h3>Node.js &amp; Express APIs</h3>
+          <p>Rohan Kapoor · 38 lessons</p>
+          <div class="course-foot">
+            <span class="course-price">₹2,799</span>
+            <a href="course-details.html" class="course-cta">Explore →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="course-card">
+        <div class="course-thumb thumb-teal"><span class="course-tag">Design</span></div>
+        <div class="course-body">
+          <p class="course-level">Advanced</p>
+          <h3>Advanced Figma Prototyping</h3>
+          <p>Arjun Mehta · 22 lessons</p>
+          <div class="course-foot">
+            <span class="course-price">₹2,199</span>
+            <a href="course-details.html" class="course-cta">Explore →</a>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <div class="load-more-row">
+      <button class="btn btn-outline btn-lg">Load more courses</button>
+    </div>
+  </section>
+
+  <section class="cta-banner">
+    <div class="cta-inner">
+      <div>
+        <h2>Not sure which track fits you?</h2>
+        <p>Talk to a mentor — free 15-minute call, no pressure.</p>
+      </div>
+      <a href="contact.html" class="btn btn-primary btn-lg">Book a call</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">EN</span>
+        <span class="brand-name">Edu<em>Nova</em></span>
+      </a>
+      <p>Practical courses, real mentors, certificates that hold up.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Product</h4>
+      <a href="course.html">Courses</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="refund.html">Refund policy</a>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy-policy.html">Privacy policy</a>
+      <a href="term-condition.html">Terms</a>
+    </div>
+    <div class="footer-col">
+      <h4>Follow</h4>
+      <a href="#">Facebook</a>
+      <a href="#">Twitter</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">YouTube</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 EduNova. All rights reserved.</p>
+  </div>
+</footer>
 
 </body>
 </html>

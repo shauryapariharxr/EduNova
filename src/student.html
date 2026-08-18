@@ -1,84 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Stories — EduNova</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/home.css">
+<link rel="stylesheet" href="css/student.css">
 </head>
 <body>
-     <section>
-        <header class="header">
-          <img id="logo" src="../images/logo.png" alt="">
-          <nav class="nav-link">
-            <li><a href="../index.html"> Home</a></li>
-            <li><a href="../about.html"> About</a></li>
-            <li><a href="../course.html"> Course</a></li>
-            <li><a href="../student.html"> Student</a></li>
-            <li><a href="../contact.html"> Contact Us</a></li>
 
+<header class="site-nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">EN</span>
+      <span class="brand-name">Edu<em>Nova</em></span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="course.html">Courses</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="login.html" class="btn btn-text">Log in</a>
+      <a href="register.html" class="btn btn-primary">Get started</a>
+    </div>
+  </div>
+</header>
 
-          </nav>
-          <div class="btn-div">
-            <a  class="btn" href="../register.html"> <button> Register</button></a>
-            <a  class="btn" href="../login.html"> <button> Login</button></a>
+<main>
+
+  <section class="about-hero">
+    <div class="about-hero-inner">
+      <span class="eyebrow">Student stories</span>
+      <h1>Real students, real outcomes.</h1>
+      <p>Not polished marketing quotes — actual notes from people who finished a track and did something with it.</p>
+    </div>
+  </section>
+
+  <section class="stats-strip">
+    <div class="stats-inner">
+      <div><span>7,000+</span><p>Students taught</p></div>
+      <div><span>92%</span><p>Course completion rate</p></div>
+      <div><span>340+</span><p>Reported job offers</p></div>
+      <div><span>4.8/5</span><p>Average course rating</p></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="testimonial-grid">
+      <article class="testimonial-card">
+        <p class="tq">“I went from zero coding experience to a junior frontend role in four months. The weekly live sessions kept me accountable in a way self-paced videos never did.”</p>
+        <div class="tf">
+          <span class="team-avatar avatar-violet">RS</span>
+          <div>
+            <h3>Rohit Sen</h3>
+            <p>Frontend Development track</p>
           </div>
-
-
-        </header>
-    </section>
-    <main>
-        <h1>home pgae </h1>
-    </main>
-
-    <!-- footer -->
-    <footer class="footer">
-        <div>
-            <!-- div top -->
-             <div class="top-footer">
-                <!-- item 1 -->
-                 <div class="item-1 item">
-                 <h4>EduLearn</h4>
-                 <p>Simple and practical web development training for students</p>
-                 <!-- social icons -->
-                  <div class="social-icons">
-                    <a href="#"><img src="./images/facebook-logo.png" alt=""></a>
-                     <a href="#"><img src="./images/linkedin.png" alt=""></a>
-                      <a href="#"><img src="./images/youtube.png" alt=""></a>
-                       <a href="#"><img src="./images/twitter.png" alt=""></a>
-                  </div>
-                 </div>
-
-                    <!-- item 2 -->
-
-                 <div class="item">
-                     <h4>Quick learn</h4>
-                     <li><a href="./index.html">Home</a></li>
-                     <li><a href="./about.html">About</a></li>
-                     <li><a href="./course.html">Course</a></li>
-                     <li><a href="./contact.html">Contact</a></li>
-                 </div>
-                  <!-- item 3 -->
-                   <div class="item">
-                    <h4>Support</h4>
-                    <li><a href="./login.html">Login</a></li>
-                    <li><a href="./register.html">Register</a></li>
-                    <li><a href="./refund.html">Refund</a></li>
-                   </div>
-                   <!-- item 4 -->
-                    <div class="item">
-                        <h4>Legal</h4>
-                        <li><a href="./term-condition.html">Term & Condition</a></li>
-                         <li><a href="./privacy-policy.html">Privacy & policy</a></li>
-                          <li><a href="./refund.html">Refund</a></li>
-
-                    </div>
-             </div>
-             <hr>
-             <div class="bottom-section">
-               <p> 2026 Education. All rights reserved. | For educational traning purpose.</p>
-             </div>
         </div>
-    </footer>
+      </article>
+
+      <article class="testimonial-card">
+        <p class="tq">“The live mentor sessions are what actually got me to finish the React track — not just another course I paid for and forgot about.”</p>
+        <div class="tf">
+          <span class="team-avatar avatar-teal">AV</span>
+          <div>
+            <h3>Ananya Verma</h3>
+            <p>Frontend Development track</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="testimonial-card">
+        <p class="tq">“I'd tried Figma tutorials on YouTube for a year with nothing to show for it. The capstone project here is the first thing I've ever actually finished.”</p>
+        <div class="tf">
+          <span class="team-avatar avatar-amber">SK</span>
+          <div>
+            <h3>Sanya Kapoor</h3>
+            <p>UI/UX Design track</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="testimonial-card">
+        <p class="tq">“Switched careers from mechanical engineering to data analytics in under six months. My mentor reviewed every project before I submitted it.”</p>
+        <div class="tf">
+          <span class="team-avatar avatar-coral">VM</span>
+          <div>
+            <h3>Vikram Malhotra</h3>
+            <p>Python for Data Science track</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="testimonial-card">
+        <p class="tq">“The cohort model made the difference. We were all stuck on the same module at the same time, so nobody felt behind.”</p>
+        <div class="tf">
+          <span class="team-avatar avatar-violet">TP</span>
+          <div>
+            <h3>Tanya Pillai</h3>
+            <p>Digital Marketing track</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="testimonial-card">
+        <p class="tq">“I run my own freelance dev shop now. The Node.js track was the missing piece between 'I can build a UI' and 'I can ship a product.'”</p>
+        <div class="tf">
+          <span class="team-avatar avatar-teal">AJ</span>
+          <div>
+            <h3>Aditya Joshi</h3>
+            <p>Node.js &amp; Express track</p>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="cta-banner">
+    <div class="cta-inner">
+      <div>
+        <h2>Your story could be next.</h2>
+        <p>Join free — no credit card, cancel anytime.</p>
+      </div>
+      <a href="register.html" class="btn btn-primary btn-lg">Create free account</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">EN</span>
+        <span class="brand-name">Edu<em>Nova</em></span>
+      </a>
+      <p>Practical courses, real mentors, certificates that hold up.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Product</h4>
+      <a href="course.html">Courses</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="refund.html">Refund policy</a>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy-policy.html">Privacy policy</a>
+      <a href="term-condition.html">Terms</a>
+    </div>
+    <div class="footer-col">
+      <h4>Follow</h4>
+      <a href="#">Facebook</a>
+      <a href="#">Twitter</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">YouTube</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 EduNova. All rights reserved.</p>
+  </div>
+</footer>
 
 </body>
 </html>

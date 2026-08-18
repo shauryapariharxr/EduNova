@@ -1,0 +1,41 @@
+/* ==========================================================
+   EduNova · Course catalog
+   Extends css/home.css (tokens, nav, footer, about-hero, cta-banner
+   already defined — load home.css first)
+   ========================================================== */
+
+.course-catalog { padding-top: 40px; }
+
+.filter-bar {
+  display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+  margin-bottom: 34px;
+}
+.filter-pill {
+  padding: 8px 16px; border-radius: 999px; border: 1px solid var(--border);
+  background: var(--surface); font-family: var(--font-body); font-size: 13px; font-weight: 600;
+  color: var(--ink-soft); cursor: pointer;
+}
+.filter-pill:hover { border-color: var(--violet); color: var(--violet); }
+.filter-pill.is-active { background: var(--violet); border-color: var(--violet); color: #fff; }
+
+.filter-search {
+  margin-left: auto; display: flex; align-items: center; gap: 8px;
+  background: var(--surface-alt); border-radius: 999px; padding: 9px 14px;
+  min-width: 220px;
+}
+.filter-search svg { width: 15px; height: 15px; color: var(--ink-faint); flex-shrink: 0; }
+.filter-search input { border: none; background: transparent; outline: none; font-size: 13px; width: 100%; color: var(--ink); }
+
+.course-grid-full { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+.course-level { font-size: 11px; font-weight: 600; color: var(--violet); text-transform: uppercase; letter-spacing: 0.04em; margin: 0 0 6px; }
+.thumb-coral { background: linear-gradient(135deg, #FF8B8B, #FF6B6B); }
+
+.load-more-row { display: flex; justify-content: center; margin-top: 40px; }
+
+@media (max-width: 1020px) {
+  .course-grid-full { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 720px) {
+  .course-grid-full { grid-template-columns: 1fr; }
+  .filter-search { min-width: 100%; order: 10; }
+}
