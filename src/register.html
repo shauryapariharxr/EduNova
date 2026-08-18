@@ -32,7 +32,7 @@
     </div>
 
     <blockquote class="auth-quote">
-      <p>“I went from zero coding experience to a junior frontend role in four months.”</p>
+      <p>"I went from zero coding experience to a junior frontend role in four months."</p>
       <cite>— Rohit Sen, Frontend Track</cite>
     </blockquote>
   </aside>
@@ -62,26 +62,26 @@
 
       <div class="divider"><span>or sign up with email</span></div>
 
-      <form class="auth-form" onsubmit="return false;">
+      <form class="auth-form">
         <div class="field-grid">
           <label class="field">
             <span>First name</span>
-            <input type="text" placeholder="Shaurya" required>
+            <input type="text" name="firstName" placeholder="Shaurya" required>
           </label>
           <label class="field">
             <span>Last name</span>
-            <input type="text" placeholder="Parihar" required>
+            <input type="text" name="lastName" placeholder="Parihar" required>
           </label>
         </div>
 
         <label class="field">
           <span>Email address</span>
-          <input type="email" placeholder="you@example.com" required>
+          <input type="email" name="email" placeholder="you@example.com" required>
         </label>
 
         <label class="field">
           <span>Password</span>
-          <input type="password" placeholder="At least 8 characters" required>
+          <input type="password" name="password" placeholder="At least 8 characters" required minlength="6">
         </label>
 
         <label class="checkbox checkbox-terms">
@@ -98,5 +98,26 @@
 
 </div>
 
+<script src="../javascript/auth.js"></script>
+<script>
+  document.querySelector('.auth-form').addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const form = e.target;
+    const firstName = form.querySelector('input[name=firstName]').value;
+    const lastName = form.querySelector('input[name=lastName]').value;
+    const email = form.querySelector('input[name=email]').value;
+    const password = form.querySelector('input[name=password]').value;
+    const name = `${firstName} ${lastName}`.trim();
+
+    const result = await EduNovaAuth.registerUser({ name, email, password });
+
+    if (result.ok) {
+      window.location.href = "dashboard.html";
+    } else {
+      alert(result.message); // swap for inline error UI later
+    }
+  });
+</script>
 </body>
 </html>

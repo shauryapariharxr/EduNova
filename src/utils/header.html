@@ -24,8 +24,8 @@
             display: flex;
             gap: 10px;
             list-style: none;
-            
-           
+
+
         }
 
         .nav-link a{
@@ -56,6 +56,13 @@
         }
     </style>
 </head>
+<button id="logout-btn">Log out</button>
+<script>
+  document.getElementById('logout-btn')?.addEventListener('click', () => {
+    EduNovaAuth.logoutUser();
+    window.location.href = "login.html";
+  });
+</script>
 <body>
     <section>
         <header class="header">
@@ -66,8 +73,8 @@
             <li><a href="../course.html"> Course</a></li>
             <li><a href="../student.html"> Student</a></li>
             <li><a href="../contact.html"> Contact Us</a></li>
-          
-          
+
+
           </nav>
           <div class="btn-div">
             <a  class="btn" href="../register.html"> <button> Register</button></a>

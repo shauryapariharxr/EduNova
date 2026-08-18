@@ -9,6 +9,16 @@
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/dashboard.css">
 </head>
+<script src="js/auth.js"></script>
+<script>
+  const session = EduNovaAuth.requireAuth(); // redirects to login.html if not logged in
+  if (session) {
+    const user = EduNovaAuth.getCurrentUserFull();
+    document.querySelector('.profile-name').textContent = user.name;
+    // fill in stats/courses/streak the same way, e.g.:
+    // document.querySelector('.streak-count').textContent = user.streak;
+  }
+</script>
 <body>
 
 <div class="app">
