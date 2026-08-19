@@ -4,6 +4,15 @@
    already defined — load home.css first)
    ========================================================== */
 
+.about-hero { padding: 64px 32px 20px; }
+.about-hero-inner { max-width: 720px; margin: 0 auto; text-align: center; }
+.about-hero-inner h1 {
+  font-family: var(--font-display); font-weight: 700;
+  font-size: 40px; line-height: 1.2; letter-spacing: -0.02em;
+  margin: 0 0 18px;
+}
+.about-hero-inner p { font-size: 15.5px; line-height: 1.65; color: var(--ink-soft); margin: 0; }
+
 .legal-section { padding-top: 40px; }
 .legal-grid { display: grid; grid-template-columns: 240px 1fr; gap: 48px; align-items: start; }
 

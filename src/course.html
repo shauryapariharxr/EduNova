@@ -43,19 +43,19 @@
 
   <section class="section course-catalog">
     <div class="filter-bar">
-      <button class="filter-pill is-active">All</button>
-      <button class="filter-pill">Web Development</button>
-      <button class="filter-pill">Design</button>
-      <button class="filter-pill">Data Science</button>
-      <button class="filter-pill">Marketing</button>
+      <button class="filter-pill is-active" data-filter="all">All</button>
+      <button class="filter-pill" data-filter="web-development">Web Development</button>
+      <button class="filter-pill" data-filter="design">Design</button>
+      <button class="filter-pill" data-filter="data-science">Data Science</button>
+      <button class="filter-pill" data-filter="marketing">Marketing</button>
       <div class="filter-search">
         <svg viewBox="0 0 24 24"><path d="m21 21-4.3-4.3m2.3-5.2a7.5 7.5 0 1 1-15 0 7.5 7.5 0 0 1 15 0Z"/></svg>
-        <input type="text" placeholder="Search courses…">
+        <input type="text" id="courseSearch" placeholder="Search courses…">
       </div>
     </div>
 
-    <div class="course-grid-full">
-      <article class="course-card">
+    <div class="course-grid-full" id="courseGrid">
+      <article class="course-card" data-category="web-development">
         <div class="course-thumb thumb-violet"><span class="course-tag">React</span></div>
         <div class="course-body">
           <p class="course-level">Beginner–Intermediate</p>
@@ -68,7 +68,7 @@
         </div>
       </article>
 
-      <article class="course-card">
+      <article class="course-card" data-category="design">
         <div class="course-thumb thumb-teal"><span class="course-tag">Design</span></div>
         <div class="course-body">
           <p class="course-level">Beginner</p>
@@ -81,7 +81,7 @@
         </div>
       </article>
 
-      <article class="course-card">
+      <article class="course-card" data-category="data-science">
         <div class="course-thumb thumb-amber"><span class="course-tag">Data</span></div>
         <div class="course-body">
           <p class="course-level">Intermediate</p>
@@ -94,7 +94,7 @@
         </div>
       </article>
 
-      <article class="course-card">
+      <article class="course-card" data-category="marketing">
         <div class="course-thumb thumb-coral"><span class="course-tag">Marketing</span></div>
         <div class="course-body">
           <p class="course-level">Beginner</p>
@@ -107,7 +107,7 @@
         </div>
       </article>
 
-      <article class="course-card">
+      <article class="course-card" data-category="web-development">
         <div class="course-thumb thumb-violet"><span class="course-tag">Backend</span></div>
         <div class="course-body">
           <p class="course-level">Intermediate</p>
@@ -120,7 +120,7 @@
         </div>
       </article>
 
-      <article class="course-card">
+      <article class="course-card" data-category="design">
         <div class="course-thumb thumb-teal"><span class="course-tag">Design</span></div>
         <div class="course-body">
           <p class="course-level">Advanced</p>
@@ -133,6 +133,8 @@
         </div>
       </article>
     </div>
+
+    <p class="no-results" id="noResults" hidden>No courses match your search. Try a different filter or keyword.</p>
 
     <div class="load-more-row">
       <button class="btn btn-outline btn-lg">Load more courses</button>
@@ -186,5 +188,6 @@
   </div>
 </footer>
 
+<script src="javascript/course.js" defer></script>
 </body>
 </html>
