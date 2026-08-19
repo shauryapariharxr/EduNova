@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Certificates — EduNova</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/dashboard.css">
+<script src="../javascript/auth.js"></script>
+<script src="../javascript/theme.js"></script>
+<script>
+  // Runs before the page renders, so logged-out users never see a flash of dashboard content.
+  const session = EduNovaAuth.requireAuth(); // redirects to login.html if not logged in
+</script>
+</head>
+<body>
+
+<div class="app">
+
+  <!-- ================= SIDEBAR ================= -->
+  <aside class="sidebar">
+    <div class="sidebar-brand">
+      <span class="brand-mark">EN</span>
+      <span class="brand-name">Edu<em>Nova</em></span>
+    </div>
+
+    <nav class="sidebar-nav">
+      <span class="nav-label">Menu</span>
+      <a href="dashboard.html" class="nav-item">
+        <svg viewBox="0 0 24 24" class="nav-icon"><path d="M4 13h6V4H4v9Zm0 7h6v-5H4v5Zm8 0h8V11h-8v9Zm0-16v5h8V4h-8Z"/></svg>
+        <span>Dashboard</span>
+      </a>
+      <a href="my-courses.html" class="nav-item">
+        <svg viewBox="0 0 24 24" class="nav-icon"><path d="M4 5.5C4 4.67 4.67 4 5.5 4H12v16H5.5A1.5 1.5 0 0 1 4 18.5v-13Zm10-1.5h4.5c.83 0 1.5.67 1.5 1.5v13c0 .83-.67 1.5-1.5 1.5H14V4Z"/></svg>
+        <span>My Courses</span>
+      </a>
+      <a href="live-classes.html" class="nav-item">
+        <svg viewBox="0 0 24 24" class="nav-icon"><path d="M12 2 1 8l11 6 9-4.9V17h2V8L12 2Zm0 8.7L4.4 8 12 4.3 19.6 8 12 10.7ZM5 13.2v3.7c0 1.9 3.1 4.1 7 4.1s7-2.2 7-4.1v-3.7l-7 3.8-7-3.8Z"/></svg>
+        <span>Live Classes</span>
+        <span class="nav-badge">3</span>
+      </a>
+      <a href="assignments.html" class="nav-item">
+        <svg viewBox="0 0 24 24" class="nav-icon"><path d="M7 3h10a2 2 0 0 1 2 2v16l-7-3-7 3V5a2 2 0 0 1 2-2Z"/></svg>
+        <span>Assignments</span>
+      </a>
+      <a href="certificates.html" class="nav-item is-active">
+        <svg viewBox="0 0 24 24" class="nav-icon"><path d="M12 2a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm-3 11.5 3 3 3-3 3.5 8-3.9-1.3L13 22l-1-4.5-1 4.5-1.6-2.8L5.5 21.5 9 13.5Z"/></svg>
+        <span>Certificates</span>
+      </a>
+      <a href="messages.html" class="nav-item">
+        <svg viewBox="0 0 24 24" class="nav-icon"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h4l3 3 3-3h6a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Z"/></svg>
+        <span>Messages</span>
+        <span class="nav-badge nav-badge-alt">5</span>
+      </a>
+
+      <span class="nav-label">Account</span>
+      <a href="settings.html" class="nav-item">
+        <svg viewBox="0 0 24 24" class="nav-icon"><path d="M12 8a4 4 0 1 1 0 8 4 4 0 0 1 0-8Zm8.4 3.4-1.4-.4a7.4 7.4 0 0 0-.7-1.7l.7-1.3a1 1 0 0 0-.2-1.2l-1-1a1 1 0 0 0-1.2-.2l-1.3.7c-.5-.3-1.1-.6-1.7-.7l-.4-1.4A1 1 0 0 0 12.4 3h-1.4a1 1 0 0 0-1 .8l-.3 1.4c-.6.1-1.2.4-1.7.7l-1.3-.7a1 1 0 0 0-1.2.2l-1 1a1 1 0 0 0-.2 1.2l.7 1.3c-.3.5-.6 1.1-.7 1.7l-1.4.4a1 1 0 0 0-.8 1v1.4a1 1 0 0 0 .8 1l1.4.4c.1.6.4 1.2.7 1.7l-.7 1.3a1 1 0 0 0 .2 1.2l1 1a1 1 0 0 0 1.2.2l1.3-.7c.5.3 1.1.6 1.7.7l.4 1.4a1 1 0 0 0 1 .8h1.4a1 1 0 0 0 1-.8l.4-1.4c.6-.1 1.2-.4 1.7-.7l1.3.7a1 1 0 0 0 1.2-.2l1-1a1 1 0 0 0 .2-1.2l-.7-1.3c.3-.5.6-1.1.7-1.7l1.4-.4a1 1 0 0 0 .8-1v-1.4a1 1 0 0 0-.8-1Z"/></svg>
+        <span>Settings</span>
+      </a>
+      <a href="#" class="nav-item" onclick="EduNovaAuth.logout(); return false;">
+        <svg viewBox="0 0 24 24" class="nav-icon"><path d="M10 17v-2H3v-6h7V7l5 5-5 5Zm9-14H12v2h7v14h-7v2h7a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2Z"/></svg>
+        <span>Log out</span>
+      </a>
+    </nav>
+
+    <div class="sidebar-upsell">
+      <p class="upsell-eyebrow">Go further</p>
+      <p class="upsell-title">Unlock the full<br>Data Science track</p>
+      <a href="my-courses.html" class="upsell-btn">Explore plans</a>
+    </div>
+  </aside>
+
+  <!-- ================= MAIN ================= -->
+  <div class="main">
+
+    <!-- TOPBAR -->
+    <header class="topbar">
+      <div class="search">
+        <svg viewBox="0 0 24 24" class="search-icon"><path d="m21 21-4.3-4.3m2.3-5.2a7.5 7.5 0 1 1-15 0 7.5 7.5 0 0 1 15 0Z"/></svg>
+        <input type="text" placeholder="Search courses, lessons, instructors…">
+      </div>
+
+      <div class="topbar-actions">
+        <button class="theme-toggle" aria-label="Toggle dark mode" onclick="EduNovaTheme.toggle()">
+          <svg class="icon-moon" viewBox="0 0 24 24"><path d="M12.3 3a9 9 0 1 0 8.7 12.6 7.2 7.2 0 0 1-8.7-12.6Z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24"><path d="M12 5.5a1 1 0 0 1-1-1V3a1 1 0 1 1 2 0v1.5a1 1 0 0 1-1 1Zm0 15a1 1 0 0 1-1-1V18a1 1 0 1 1 2 0v1.5a1 1 0 0 1-1 1ZM4.5 13H3a1 1 0 1 1 0-2h1.5a1 1 0 1 1 0 2Zm16.5 0h-1.5a1 1 0 1 1 0-2H21a1 1 0 1 1 0 2ZM6.3 7.7a1 1 0 0 1-1.4 0L3.9 6.7A1 1 0 1 1 5.3 5.3l1 1a1 1 0 0 1 0 1.4Zm12.4 12.4a1 1 0 0 1-1.4 0l-1-1a1 1 0 0 1 1.4-1.4l1 1a1 1 0 0 1 0 1.4ZM5.3 18.7a1 1 0 0 1-1.4-1.4l1-1a1 1 0 1 1 1.4 1.4l-1 1Zm12.4-12.4a1 1 0 0 1-1.4-1.4l1-1a1 1 0 1 1 1.4 1.4l-1 1ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Z"/></svg>
+        </button>
+        <button class="icon-btn" aria-label="Notifications">
+          <svg viewBox="0 0 24 24"><path d="M12 22a2.5 2.5 0 0 0 2.45-2h-4.9A2.5 2.5 0 0 0 12 22Zm7-6-1.4-1.4V10a5.6 5.6 0 0 0-4.6-5.5V3a1 1 0 0 0-2 0v1.5A5.6 5.6 0 0 0 6.4 10v4.6L5 16v1h14v-1Z"/></svg>
+          <span class="icon-dot"></span>
+        </button>
+        <div class="topbar-divider"></div>
+        <div class="streak-chip" title="7-day learning streak">
+          <span class="streak-flame">🔥</span>
+          <span>7-day streak</span>
+        </div>
+        <a href="profile.html" class="profile">
+          <div class="avatar-ring">
+            <span class="avatar">SP</span>
+          </div>
+          <div class="profile-meta">
+            <span class="profile-name">Shaurya Parihar</span>
+            <span class="profile-role">Frontend Track</span>
+          </div>
+        </a>
+      </div>
+    </header>
+
+    <!-- CONTENT -->
+    <main class="content">
+      <section class="panel">
+        <div class="empty-state">
+          <div class="empty-state-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 2a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm-3 11.5 3 3 3-3 3.5 8-3.9-1.3L13 22l-1-4.5-1 4.5-1.6-2.8L5.5 21.5 9 13.5Z"/></svg>
+          </div>
+          <h2>Certificates you've earned</h2>
+          <p>Finish a course to unlock your first certificate. Earned certificates will be listed here, ready to download and share.</p>
+          <a href="dashboard.html" class="btn btn-primary">Back to dashboard</a>
+        </div>
+      </section>
+    </main>
+  </div>
+</div>
+
+<script>
+  if (session) {
+    document.querySelector('.profile-name').textContent = session.name;
+  }
+</script>
+
+</body>
+</html>

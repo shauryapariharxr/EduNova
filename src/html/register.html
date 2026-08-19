@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/auth.css">
+<link rel="stylesheet" href="../css/register.css">
 </head>
 <body>
 
@@ -32,7 +32,7 @@
     </div>
 
     <blockquote class="auth-quote">
-      <p>"I went from zero coding experience to a junior frontend role in four months."</p>
+      <p>“I went from zero coding experience to a junior frontend role in four months.”</p>
       <cite>— Rohit Sen, Frontend Track</cite>
     </blockquote>
   </aside>
@@ -62,26 +62,26 @@
 
       <div class="divider"><span>or sign up with email</span></div>
 
-      <form class="auth-form">
+      <form class="auth-form" onsubmit="return false;">
         <div class="field-grid">
           <label class="field">
             <span>First name</span>
-            <input type="text" name="firstName" placeholder="Shaurya" required>
+            <input type="text" placeholder="Shaurya" required>
           </label>
           <label class="field">
             <span>Last name</span>
-            <input type="text" name="lastName" placeholder="Parihar" required>
+            <input type="text" placeholder="Parihar" required>
           </label>
         </div>
 
         <label class="field">
           <span>Email address</span>
-          <input type="email" name="email" placeholder="you@example.com" required>
+          <input type="email" placeholder="you@example.com" required>
         </label>
 
         <label class="field">
           <span>Password</span>
-          <input type="password" name="password" placeholder="At least 8 characters" required minlength="6">
+          <input type="password" placeholder="At least 8 characters" required>
         </label>
 
         <label class="checkbox checkbox-terms">
@@ -100,24 +100,24 @@
 
 <script src="../javascript/auth.js"></script>
 <script>
-  document.querySelector('.auth-form').addEventListener('submit', async (e) => {
+  document.querySelector('.auth-form').addEventListener('submit', (e) => {
     e.preventDefault();
-
     const form = e.target;
-    const firstName = form.querySelector('input[name=firstName]').value;
-    const lastName = form.querySelector('input[name=lastName]').value;
-    const email = form.querySelector('input[name=email]').value;
-    const password = form.querySelector('input[name=password]').value;
+    const inputs = form.querySelectorAll('input[type=text]');
+    const firstName = inputs[0].value;
+    const lastName = inputs[1].value;
+    const email = form.querySelector('input[type=email]').value;
+    const password = form.querySelector('input[type=password]').value;
     const name = `${firstName} ${lastName}`.trim();
 
-    const result = await EduNovaAuth.registerUser({ name, email, password });
-
+    const result = EduNovaAuth.registerUser({ name, email, password });
     if (result.ok) {
-      window.location.href = "dashboard.html";
+      window.location.href = 'dashboard.html';
     } else {
-      alert(result.message); // swap for inline error UI later
+      alert(result.message);
     }
   });
 </script>
+
 </body>
 </html>

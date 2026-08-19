@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/auth.css">
+<link rel="stylesheet" href="../css/auth.css">
 </head>
 <body>
 
@@ -36,7 +36,7 @@
     </div>
 
     <blockquote class="auth-quote">
-      <p>"The live mentor sessions are what actually got me to finish the React track — not just another course I paid for and forgot."</p>
+      <p>“The live mentor sessions are what actually got me to finish the React track — not just another course I paid for and forgot.”</p>
       <cite>— Ananya Verma, Frontend Track</cite>
     </blockquote>
   </aside>
@@ -66,15 +66,15 @@
 
       <div class="divider"><span>or continue with email</span></div>
 
-      <form class="auth-form">
+      <form class="auth-form" onsubmit="return false;">
         <label class="field">
           <span>Email address</span>
-          <input type="email" name="email" placeholder="you@example.com" required>
+          <input type="email" placeholder="you@example.com" required>
         </label>
 
         <label class="field">
           <span>Password</span>
-          <input type="password" name="password" placeholder="Enter your password" required>
+          <input type="password" placeholder="Enter your password" required>
         </label>
 
         <div class="field-row">
@@ -96,21 +96,20 @@
 
 <script src="../javascript/auth.js"></script>
 <script>
-  document.querySelector('.auth-form').addEventListener('submit', async (e) => {
+  document.querySelector('.auth-form').addEventListener('submit', (e) => {
     e.preventDefault();
-
     const form = e.target;
-    const email = form.querySelector('input[name=email]').value;
-    const password = form.querySelector('input[name=password]').value;
+    const email = form.querySelector('input[type=email]').value;
+    const password = form.querySelector('input[type=password]').value;
 
-    const result = await EduNovaAuth.loginUser({ email, password });
-
+    const result = EduNovaAuth.loginUser({ email, password });
     if (result.ok) {
-      window.location.href = "dashboard.html";
+      window.location.href = 'dashboard.html';
     } else {
       alert(result.message);
     }
   });
 </script>
+
 </body>
 </html>
