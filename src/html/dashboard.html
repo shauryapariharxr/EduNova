@@ -9,7 +9,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/dashboard.css">
 <script src="../javascript/auth.js"></script>
-<script src="../javascript/theme.js"></script>
 <script>
   // Runs before the page renders, so logged-out users never see a flash of dashboard content.
   const session = EduNovaAuth.requireAuth(); // redirects to login.html if not logged in
@@ -69,7 +68,7 @@
     <div class="sidebar-upsell">
       <p class="upsell-eyebrow">Go further</p>
       <p class="upsell-title">Unlock the full<br>Data Science track</p>
-      <a href="my-courses.html" class="upsell-btn">Explore plans</a>
+      <a href="course-details.html" class="upsell-btn">Explore plans</a>
     </div>
   </aside>
 
@@ -84,10 +83,6 @@
       </div>
 
       <div class="topbar-actions">
-        <button class="theme-toggle" aria-label="Toggle dark mode" onclick="EduNovaTheme.toggle()">
-          <svg class="icon-moon" viewBox="0 0 24 24"><path d="M12.3 3a9 9 0 1 0 8.7 12.6 7.2 7.2 0 0 1-8.7-12.6Z"/></svg>
-          <svg class="icon-sun" viewBox="0 0 24 24"><path d="M12 5.5a1 1 0 0 1-1-1V3a1 1 0 1 1 2 0v1.5a1 1 0 0 1-1 1Zm0 15a1 1 0 0 1-1-1V18a1 1 0 1 1 2 0v1.5a1 1 0 0 1-1 1ZM4.5 13H3a1 1 0 1 1 0-2h1.5a1 1 0 1 1 0 2Zm16.5 0h-1.5a1 1 0 1 1 0-2H21a1 1 0 1 1 0 2ZM6.3 7.7a1 1 0 0 1-1.4 0L3.9 6.7A1 1 0 1 1 5.3 5.3l1 1a1 1 0 0 1 0 1.4Zm12.4 12.4a1 1 0 0 1-1.4 0l-1-1a1 1 0 0 1 1.4-1.4l1 1a1 1 0 0 1 0 1.4ZM5.3 18.7a1 1 0 0 1-1.4-1.4l1-1a1 1 0 1 1 1.4 1.4l-1 1Zm12.4-12.4a1 1 0 0 1-1.4-1.4l1-1a1 1 0 1 1 1.4 1.4l-1 1ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Z"/></svg>
-        </button>
         <button class="icon-btn" aria-label="Notifications">
           <svg viewBox="0 0 24 24"><path d="M12 22a2.5 2.5 0 0 0 2.45-2h-4.9A2.5 2.5 0 0 0 12 22Zm7-6-1.4-1.4V10a5.6 5.6 0 0 0-4.6-5.5V3a1 1 0 0 0-2 0v1.5A5.6 5.6 0 0 0 6.4 10v4.6L5 16v1h14v-1Z"/></svg>
           <span class="icon-dot"></span>
