@@ -927,6 +927,7 @@ svg { fill: currentColor; width: 100%; height: 100%; }
   .hero { flex-direction: column; align-items: flex-start; }
   .roadmap { flex-wrap: wrap; gap: 20px; }
   .roadmap-line { display: none; }
+  .badge-grid { grid-template-columns: repeat(3, 1fr); }
 }
 
 @media (max-width: 640px) {
@@ -936,6 +937,20 @@ svg { fill: currentColor; width: 100%; height: 100%; }
   .course-row { grid-template-columns: 1fr; }
   .profile-meta { display: none; }
   .streak-chip span:last-child { display: none; }
+
+  /* Profile page */
+  .profile-header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 20px 20px;
+    margin-top: -40px;
+  }
+  .profile-avatar-lg { width: 84px; height: 84px; font-size: 26px; border-radius: 20px; }
+  .profile-id, .profile-actions { padding-top: 12px; }
+  .profile-actions { width: 100%; }
+  .profile-actions .btn { flex: 1; }
+  .profile-body { padding: 0 20px 24px; }
+  .badge-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (prefers-reduced-motion: reduce) {

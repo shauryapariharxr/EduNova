@@ -9,17 +9,18 @@
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/home.css">
 <link rel="stylesheet" href="../css/legal.css">
+<script src="../javascript/nav.js"></script>
 </head>
 <body>
 
 <header class="site-nav">
   <div class="nav-inner">
-    <a href="../../index.html" class="brand">
+    <a href="index.html" class="brand">
       <span class="brand-mark">EN</span>
       <span class="brand-name">Edu<em>Nova</em></span>
     </a>
     <nav class="nav-links">
-      <a href="../../index.html">Home</a>
+      <a href="index.html">Home</a>
       <a href="course.html">Courses</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
@@ -28,6 +29,10 @@
       <a href="login.html" class="btn btn-text">Log in</a>
       <a href="register.html" class="btn btn-primary">Get started</a>
     </div>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" onclick="EduNovaNav.toggle()">
+        <svg class="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
   </div>
 </header>
 
@@ -105,7 +110,7 @@
 <footer class="site-footer">
   <div class="footer-inner">
     <div class="footer-brand">
-      <a href="../../index.html" class="brand">
+      <a href="index.html" class="brand">
         <span class="brand-mark">EN</span>
         <span class="brand-name">Edu<em>Nova</em></span>
       </a>

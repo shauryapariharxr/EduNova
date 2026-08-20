@@ -94,6 +94,25 @@ a { color: inherit; text-decoration: none; }
 .nav-links a.is-active { color: var(--violet); }
 .nav-actions { display: flex; align-items: center; gap: 10px; }
 
+/* ---- Mobile nav toggle (hamburger) ---- */
+.nav-toggle {
+  display: none;
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--surface, #fff);
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+  margin-left: 8px;
+}
+.nav-toggle svg { width: 19px; height: 19px; color: var(--ink); }
+.nav-toggle .icon-close { display: none; }
+.nav-toggle.is-active .icon-open { display: none; }
+.nav-toggle.is-active .icon-close { display: block; }
+
 /* ==========================================================
    Hero
    ========================================================== */
@@ -274,7 +293,28 @@ a { color: inherit; text-decoration: none; }
 }
 
 @media (max-width: 720px) {
-  .nav-links { display: none; }
+  .nav-toggle { display: flex; }
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    background: var(--surface, #fff);
+    border-bottom: 1px solid var(--border);
+    box-shadow: 0 12px 24px -12px rgba(0,0,0,0.18);
+  }
+  .nav-links.is-open { display: flex; }
+  .nav-links a {
+    padding: 14px 24px;
+    border-bottom: 1px solid var(--border);
+    font-size: 15px;
+  }
+  .nav-links a:last-child { border-bottom: none; }
+  .site-nav { position: relative; }
   .hero-copy h1 { font-size: 34px; }
   .stats-inner { grid-template-columns: repeat(2, 1fr); }
   .feature-grid { grid-template-columns: 1fr; }
@@ -282,6 +322,10 @@ a { color: inherit; text-decoration: none; }
   .section-head-row { flex-direction: column; align-items: flex-start; gap: 14px; }
   .cta-inner { flex-direction: column; text-align: center; }
   .footer-inner { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 400px) {
+  .nav-actions .btn-text { display: none; }
 }
 
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; scroll-behavior: auto !important; } }
